@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-selector:'app-server-eminem',
+selector:'app-server',
 templateUrl:'./server.component.html'
 })
 
