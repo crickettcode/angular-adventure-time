@@ -8,3 +8,10 @@
 p {
     color:beige;
 }
+
+button {
+    color:orange;
+    text-align: left;
+    padding:5 5 5 5px;
+    
+}
