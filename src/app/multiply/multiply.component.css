@@ -1,8 +1,5 @@
-
-
-
 .container {
-    background:beige;
+    background-color:beige;
     padding:20px;
     border: 1px, solid, #613F18;
 }
@@ -10,4 +7,3 @@
 p {
     color:#613F18;
 }
-

@@ -10,6 +10,8 @@ import { ServerComponent } from './server/server.component';
 import { ServersComponent } from './servers/servers.component';
 import { AddComponent } from './add/add.component';
 import { SubtractComponent}  from './subtract/subtract.component';
+import { MultiplyComponent}  from './multiply/multiply.component';
+
 
 @NgModule({
   declarations: [
@@ -17,7 +19,8 @@ import { SubtractComponent}  from './subtract/subtract.component';
     ServerComponent,
     ServersComponent,
     AddComponent,
-    SubtractComponent
+    SubtractComponent,
+    MultiplyComponent
   ],
   imports: [
     BrowserModule,
