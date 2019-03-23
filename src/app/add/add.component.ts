@@ -14,4 +14,19 @@ styleUrls: ['./add.component.css']
 
 export class AddComponent{
 
+    allowAddition = false;
+
+  constructor() {
+   
+    setTimeout(() => {
+      this.allowAddition = true;
+    },2000);
+
+   }
+
+  ngOnInit() {
+  }
+
 }
+
+
