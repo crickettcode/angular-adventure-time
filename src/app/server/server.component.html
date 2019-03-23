@@ -1,2 +1,7 @@
-<p> Server {{ serverId }} is {{getServerStatus()}}</p>
+<p> Server {{ serverId }} is {{getServerStatus()}}
+        <button class = 'btn btn-primary'[innerText]="!serverOffline">+</button>
+</p>
 
+#/bin/bash
+#upload files
+aws s3 cp ./dist s3://www.crickettcode.com --recursive --acl public-read

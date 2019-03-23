@@ -19,4 +19,18 @@ export class ServerComponent {
         return this.serverStatus;
     }
 
+
+    serverOffline = false;
+
+  constructor() {
+   
+    setTimeout(() => {
+      this.serverOffline= true;
+    },2000);
+
+   }
+
+  ngOnInit() {
+  }
+
 }
