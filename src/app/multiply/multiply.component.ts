@@ -16,6 +16,7 @@ export class MultiplyComponent{
 
         allowMultiplication = false;
         multiplyCreationStatus = 'no math was performed';
+        multiplicationExercises ="";
     
       constructor() {
        
@@ -35,6 +36,10 @@ export class MultiplyComponent{
             this.multiplyCreationStatus = 'no math was performed'
           },2000);
       
+         }
+
+         onUpdateMultiplicationExercises(event: Event) {
+            this.multiplicationExercises = (<HTMLInputElement>event.target).value;
          }
 
 
