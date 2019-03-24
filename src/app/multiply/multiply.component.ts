@@ -14,4 +14,30 @@ styleUrls: ['./multiply.component.css']
 
 export class MultiplyComponent{
 
-}
+        allowMultiplication = false;
+        multiplyCreationStatus = 'no math was performed';
+    
+      constructor() {
+       
+        setTimeout(() => {
+          this.allowMultiplication = true;
+          this.multiplyCreationStatus = 'no math was performed'
+        },2000);
+    
+       }
+    
+      ngOnInit() {
+          
+      }
+      onCreateMultiplication() {
+          this.multiplyCreationStatus = 'math was performed';
+          setTimeout(() => {
+            this.multiplyCreationStatus = 'no math was performed'
+          },2000);
+      
+         }
+
+
+      }
+    
+
