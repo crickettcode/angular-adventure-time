@@ -1,15 +1,26 @@
 
 
-
+<div class = "multiply">
 <label>Multiplication Exercises</label>
 <input type="text" 
 class="form-control"
 (input)="onUpdateMultiplicationExercises($event)">
+</div>
+<p>First Number:
+        <input type="number" ng-model="num1" ng-init="num1=0" />
+         </p>
+         <p>Second Number:
+         <input type="number" ng-model="num2" ng-init="num2=0" />
+         </p>
+         <p>Sum: {{ num1 * num2 }}</p>
+
 <p>{{multiplicationExercises}}</p>
 
 <div class="container">
         <p>multiplication</p>
        
         <button class = 'btn btn-primary>'(click)="onCreateMultiplication()">*</button>
-        <p>{{multiplyCreationStatus}}</p>
+       <div class = "multiply"><p>{{multiplyCreationStatus}}</p></div>
     </div>
+
+   
